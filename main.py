@@ -3,7 +3,7 @@ from menu import tambah_menu, transaksi
 
 def main():
     print("=" * 40)
-    print("   SELAMAT DATANG DI RESTORAN   ".center(40))
+    print("   SELAMAT DATANG DI PEMPEK PALEMBANF   ".center(40))
     print("=" * 40)
 
     while True:
