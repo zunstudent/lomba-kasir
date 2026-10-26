@@ -1,4 +1,4 @@
-# Lomba Coding TI 2026 - Aplikasi Kasir Restoran
+# Lomba Coding TI 2026 - Aplikasi Kasir Resto Sederhana
 
 Proyek ini dibuat untuk mengikuti Lomba Coding Mahasiswa Baru Teknik Informatika 2026.
 
