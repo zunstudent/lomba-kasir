@@ -8,6 +8,6 @@ Proyek ini dibuat untuk mengikuti Lomba Coding Mahasiswa Baru Teknik Informatika
 - **Testing + Red Team:** Reza
 
 ## 🚀 Cara Menjalankan
-Pastikan Python 3 sudah terinstall.
+Pastikan Python 3 sudah terinstall, lalu jalankan berikut:
 ```bash
 python3 main.py
