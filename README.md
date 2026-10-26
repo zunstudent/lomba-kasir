@@ -3,7 +3,7 @@
 Proyek ini dibuat untuk mengikuti Lomba Coding Mahasiswa Baru Teknik Informatika 2026.
 
 ## 👥 Tim
-- **Ketua + Coder:** [Nama Kamu]
+- **Ketua + Coder:** Zun
 - **Flowchart + Dokumentasi:** Blqis
 - **Testing + Red Team:** Reza
 
