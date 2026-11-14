@@ -1,3 +1,2 @@
-# Ini adalah "gudang" untuk menyimpan daftar menu.
-# Awalnya kosong, nanti diisi lewat fitur Tambah Menu.
+# Database sederhana untuk menyimpan daftar menu (nama -> harga)
 katalog_makanan = {}

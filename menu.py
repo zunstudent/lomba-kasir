@@ -4,10 +4,10 @@ from kalkulasi import format_rupiah, hitung_diskon
 from nota import cetak_nota
 
 def tampilkan_katalog(katalog):
-    """Menampilkan daftar menu."""
     print("\n--- KATALOG MENU ---")
     for i, (nama, harga) in enumerate(katalog.items(), 1):
         print(f"{i}. {nama:<20} {format_rupiah(harga)}")
+    print("0. Batal")
     print("-" * 30)
 
 
@@ -41,24 +41,30 @@ def transaksi(katalog):
         print("❌ Nama pembeli tidak boleh kosong.")
         return
 
-    tampilkan_katalog(katalog)
-    pilihan = input("Pilih makanan (nomor/nama): ").strip()
+    while True:
+        tampilkan_katalog(katalog)
+        pilihan = input("Pilih makanan (nomor/nama, atau '0' untuk batal): ").strip()
 
-    nama_makanan = None
-    if pilihan.isdigit():
-        idx = int(pilihan) - 1
-        daftar = list(katalog.items())
-        if 0 <= idx < len(daftar):
-            nama_makanan = daftar[idx][0]
-    else:
-        for nama in katalog:
-            if nama.lower() == pilihan.lower():
-                nama_makanan = nama
-                break
+        if pilihan.lower() in ["0", "batal", "cancel"]:
+            print("[!] Transaksi dibatalkan.")
+            return
 
-    if not nama_makanan:
-        print("❌ Makanan tidak ditemukan.")
-        return
+        nama_makanan = None
+        if pilihan.isdigit():
+            idx = int(pilihan) - 1
+            daftar = list(katalog.items())
+            if 0 <= idx < len(daftar):
+                nama_makanan = daftar[idx][0]
+        else:
+            for nama in katalog:
+                if nama.lower() == pilihan.lower():
+                    nama_makanan = nama
+                    break
+
+        if nama_makanan:
+            break
+
+        print("[!] Makanan tidak ditemukan. Silakan pilih kembali.")
 
     harga = katalog[nama_makanan]
 
