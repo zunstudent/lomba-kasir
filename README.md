@@ -1,4 +1,4 @@
-# Lomba Coding TI 2026 - Aplikasi Kasir Restoran
+# Lomba Coding TI 2026 - Aplikasi Kasir Resto Sederhana
 
 Proyek ini dibuat untuk mengikuti Lomba Coding Mahasiswa Baru Teknik Informatika 2026.
 
@@ -8,6 +8,6 @@ Proyek ini dibuat untuk mengikuti Lomba Coding Mahasiswa Baru Teknik Informatika
 - **Testing + Red Team:** Reza
 
 ## 🚀 Cara Menjalankan
-Pastikan Python 3 sudah terinstall.
+Pastikan Python 3 sudah terinstall, lalu jalankan berikut:
 ```bash
 python3 main.py
